@@ -128,11 +128,10 @@ body
 		text-decoration: none
 		text-align: center
 		+ol
-
 		&:hover
 			background: #696A72
 		&.is-active
-			background: #54555c
+			background: #696A72
 			color: #fff 
 .slider
 	min-width: 1000px
@@ -167,6 +166,7 @@ body
 		&.cycle-pager-active
 			background: #fff
 .page
+	min-width: 1000px
 	margin-bottom: 56px
 	border-top: 40px solid #d9d4d0
 	+box-shadow(inset 0 3px 0 #afaeae)
@@ -223,33 +223,39 @@ body
 	margin-bottom: 50px
 	text-align: left
 	li
+		&.is-active
+			a
+				background: #40619e
+				+box-shadow(inset 0px 1px 0 rgba(#fff, .5))
+				color: #fff
+				&:before
+					+s(i-list_mod)
+			&:hover
+				a
+					text-decoration: none
+	a
 		padding: 7px 40px
 		margin-bottom: 8px
+		display: block
 		position: relative
+		font-size: 15px
+		text-decoration: none
+		color: #4a4a4a
+		&:hover
+			background: #40619e
+			+box-shadow(inset 0px 1px 0 rgba(#fff, .5))
+			&:before
+				+s(i-list_mod)
+			color: #FFF 
 		&:before
 			content: ""
 			+s(i-list)
 			position: absolute
 			left: 20px
 			top: 13px
-		&.is-active
-			background: #40619e
-			+box-shadow(inset 0px 1px 0 rgba(#fff, .5))
-			&:before
-				+s(i-list_mod)
-			a
-				color: #fff
-			&:hover
-				a
-					text-decoration: none
-	a
-		font-size: 15px
-		text-decoration: none
-		color: #4a4a4a
-		&:hover
-			text-decoration: underline
 
 .footer
+	min-width: 1000px
 	background: #40434b
 	padding: 12px 0
 .footer__in
