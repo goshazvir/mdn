@@ -60,7 +60,7 @@ body { font-size: 15px; font-family: "Open Sans", sans-serif; line-height: 1.2; 
 .nav a:hover { background: #696a72; color: white; }
 .nav a.is-active { background: #696a72; color: white; }
 
-.slider { min-width: 1000px; height: 295px; position: relative; }
+.slider { min-width: 1000px; height: 295px; overflow: hidden; position: relative; }
 
 .slider__item { width: 100%; height: 295px; }
 .slider__item img { width: 100%; height: 295px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
