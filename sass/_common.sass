@@ -12,7 +12,7 @@ body
 	+os
 	line-height: 1.2
 .out
-	// width: 1000px
+	min-width: 1000px
 	// margin-left: auto
 	// margin-right: auto
 	position: relative
@@ -89,16 +89,17 @@ body
 		background: #42629c
 		color: #fff 
 .nav-wrap
-	// position: relative
+	width: 1000px
+	position: absolute
+	top: 170px
+	z-index: 1000
+	left: 50%
+	margin-left: -500px
 .nav
 	width: 670px
+	margin: 0 auto
 	display: table
 	border-spacing: 0px
-	position: absolute
-	top: 177px
-	left: 50%
-	margin-left: -343px
-	z-index: 999
 	+border-radius(1px)
 	+box-shadow(0 0 0 8px rgba(#fff, .5))
 	overflow: hidden
@@ -190,7 +191,7 @@ body
 	position: relative
 	top: -22px
 .title
-	padding: 24px 130px 0 130px
+	padding: 24px 138px 0 138px
 	display: inline-block
 	background: #FFF
 	text-transform: uppercase 
@@ -210,7 +211,6 @@ body
 		+s(t-shadow_r)
 		right: -16px
 .meta
-	width: 205px
 	height: 33px
 	line-height: 33px
 	margin-bottom: 5px
@@ -222,16 +222,15 @@ body
 		color: #4a4a4a
 		+ob
 .sub-nav
-	width: 205px
 	margin-bottom: 50px
 	text-align: left
 	li
 		&.is-active
 			a
-				background: #40619e
-				+box-shadow(inset 0px 1px 0 rgba(#fff, .5))
-				color: #fff
-				&:before
+				background: #40619e 
+				+box-shadow(inset 0px 1px 0 rgba(#fff, .5)) 
+				color: #fff 
+				&:before  
 					+s(i-list_mod)
 			&:hover
 				a
