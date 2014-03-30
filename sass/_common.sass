@@ -51,6 +51,8 @@ body
 	background: #fff
 	border: 1px solid #9b9b9b
 	+opacity(0.5)
+	+border-radius(0px)
+	+box-shadow(none)
 	+box
 .search__btn
 	+s(i-lupa2)
@@ -83,7 +85,7 @@ body
 	color: #4A4A4A
 	&:first-child
 		margin-left: 0
-	&.is-active
+	&.is-active, &:hover
 		background: #42629c
 		color: #fff 
 .nav-wrap
@@ -130,6 +132,7 @@ body
 		+ol
 		&:hover
 			background: #696A72
+			color: #fff
 		&.is-active
 			background: #696A72
 			color: #fff 
