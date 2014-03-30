@@ -313,3 +313,37 @@ body
 			&:before
 				content: none
 
+.cycle
+	position: relative
+	.cycle__in
+		width: 127px
+		margin: 13px auto 12px
+	.cycle__item
+		width: 125px
+		height: 175px
+		overflow: hidden
+		border: 1px solid #dedede
+		img
+			width: 100%
+	.cycle__prev, .cycle__next
+		position: absolute
+		top: 50%
+		margin-top: -5px
+	.cycle__prev
+		+s(i-arr_l)
+		left: 18px
+	.cycle__next
+		+s(i-arr_r)
+		right: 18px
+
+.view-all
+	display: inline-block
+	vertical-align: middle
+	color: #4a4a4a
+	text-decoration: none
+	&:after
+		content: ""
+		margin-left: 5px
+		display: inline-block
+		vertical-align: middle
+		+s(i-arr)
