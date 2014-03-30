@@ -1,6 +1,200 @@
 body
-	font-size: 12px 
+	font-size: 15px 
 	font-family: Arial, sans-serif 
-	line-height: 1.4
+	line-height: 1.2
+.out
+	position: relative
+.wrap
+	width: 940px
+	margin-left: auto
+	margin-right: auto
+.header
+	padding-top: 27px
+	min-height: 93px
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	z-index: 1000
+	background: rgba(#fff, .92)
+	+clr
+.header-i
+	position: relative
+.header__logo
+	width: 170px
+	position: absolute
+	top: -20px
+	left: 0
+	+s(logo)
+	+hide-text
+.header__right
+	width: 200px
+	float: right
+.search
+	position: relative
+.search__input
+	width: 187px
+	padding: 5px 5px
+	background: #fff
+	border: 1px solid #9b9b9b
+	+opacity(0.5)
+.search__btn
+	+s(i-lupa)
+	position: absolute
+	top: 4px
+	right: 6px
+.header__center
+	padding: 0 25px
+	overflow: hidden
+	text-align: right
+	text-transform: uppercase
+	color: #42629C
+.lang
+	font-size: 0
+.lang__btn
+	width: 90px
+	height: 23px
+	line-height: 23px
+	margin-left: 15px
+	margin-bottom: 15px
+	display: inline-block
+	font-size: 11px
+	text-transform: uppercase
+	text-align: center
+	text-decoration: none
+	color: #4A4A4A
+	border: 1px solid #c5c4c6
+	&:first-child
+		margin-left: 0
+.nav
+	width: 670px
+	display: table
+	border-spacing: 0px
+	position: absolute
+	top: 190px
+	left: 50%
+	margin-left: -470px
+	z-index: 999
+	+border-radius(10px)
+	+box-shadow(0 0 0 5px rgba(#fff, .42))
+	overflow: hidden
+	ul
+		display: table-row
+		border-bottom: 1px solid #40434B
+		border-right: 1px solid #40434B
+	li
+		display: table-cell
+	a
+		height: 51px
+		line-height: 51px
+		display: block
+		background: #40424B
+		color: #FFF
+		text-decoration: none
+		text-align: center
+		&:hover
+			background: #696A72
+		&.is-active
+			background: #54555c
+.slider
+	height: 295px
+	position: relative
+.slider__item
+	width: 100%
+	height: 295px
+	img
+		width: 100%
+		height: 295px
+		+cover
+.slider__pager
+	width: 670px
+	text-align: center
+	position: absolute
+	left: 50%
+	margin-left: -480px
+	bottom: 15px
+	z-index: 200
+	span
+		width: 9px
+		height: 9px
+		+border-radius(50%)
+		margin-left: 18px
+		display: inline-block
+		background: rgba(#fff, .49)
+		font-size: 0
+		cursor: pointer
+		&:first-child
+			margin-left: 0
+		&.cycle-pager-active
+			background: #fff
+.page
+	border-top: 40px solid #d9d4d0
+	+box-shadow(inset 0 3px 0 #afaeae)
+	text-align: center
+.page__content
+	padding-right: 60px
+	border-right: 1px solid #D4D4D4
+	text-align: left
+	font-size: 15px
+	color: #555
+	p
+		margin-bottom: 15px
+.wrap-title
+	width: 720px
+	height: 41px
+	position: relative
+	top: -30px
+.title
+	padding: 10px 90px
+	margin-right: 70px
+	display: inline-block
+	background: #FFF 
+	+border-radius(5px)
+	text-align: center
+	font-size: 18px
+	text-transform: uppercase 
+	color: #313131
 
-// common blocks
+.sub-nav
+	text-align: left
+	li
+		padding: 7px 30px
+		margin-bottom: 8px
+		position: relative
+		&:before
+			content: ""
+			+s(i-list)
+			position: absolute
+			left: 18px
+			top: 13px
+		&.is-active
+			background: #F3F3F3 
+			&:hover
+				a
+					text-decoration: none
+	a
+		font-size: 15px
+		text-decoration: none
+		color: #4A4A4A
+		&:hover
+			text-decoration: underline
+
+.footer
+	padding-top: 22px
+	background: #40434b
+.footer-i
+	+clr
+.footer__left
+	float: left
+	width: 720px
+.footer__right
+	float: right
+	width: 220px
+.footer__copy
+	color: #D4D4D4
+	font-size: 11px
+.second-nav
+	a
+		font-size: 12px
+		color: #cacaca
+

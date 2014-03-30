@@ -3,20 +3,120 @@
 <!--[if gt IE 8]><!--><html><!--<![endif]-->
 <head>
 	<meta charset="utf-8">
-	<title>Template</title>
+	<title>mdn</title>
 	<meta name="viewport" content="initial-scale=1"/>
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
+	<script src="js/cycle.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
 
 <!-- BEGIN  out-->
 <div class="out">
-
+	<!-- BEGIN header -->
+	<div class="header">
+		<div class="header-i wrap">
+			<a href="#" class="header__logo">mdn group</a>
+			<div class="header__right">
+				<div class="lang">
+					<a href="#" class="lang__btn">Русский</a>
+					<a href="#" class="lang__btn">english</a>
+				</div>
+				<div class="search">
+					<input type="text" class="search__input">
+					<button class="search__btn"></button>
+				</div>
+			</div>
+			<div class="header__center">
+				<p>12 YEARS OF EXPERIENCE AS</p>
+				<p>STRATEGIC AND CORPORATE FINANCE ADVISOR </p>
+				<p>WE WIN WHEN OUR CLIENTS WIN</p>
+			</div>
+		</div>
+	</div>
+	<!-- / .header -->
+	<!-- BEGIN nav -->
+	<div class="nav">
+		<ul>
+			<li><a href="#">ABOUT US</a></li>
+			<li><a href="#" class="is-active">SERVICES</a></li>
+			<li><a href="#">OUR CLIENTS</a></li>
+			<li><a href="#">INDUSTRIES</a></li>
+			<li><a href="#">CONTACTS</a></li>
+		</ul>
+	</div>
+	<!-- / .nav -->
+	<!-- BEGIN slider -->
+	<div class="slider">
+		<div class="cycle-slideshow"
+		data-cycle-fx="scrollHorz"
+		data-cycle-timeout="6000"
+		data-cycle-slides=".slider__item"
+		data-cycle-pager=".slider__pager"
+		>
+			<div class="slider__item">
+				<img src="img/bg.jpg" alt="">
+			</div>
+			<div class="slider__item">
+				<img src="http://placehold.it/1200x295">
+			</div>
+			<div class="slider__item">
+				<img src="http://placehold.it/1200x295">
+			</div>
+			<div class="slider__item">
+				<img src="http://placehold.it/1200x295">
+			</div>
+		</div>
+	</div>
+	<!-- / .slider -->
+	<div class="slider__pager"></div>
+	<div class="page">
+		<div class="l">
+			<div class="l-page">
+				<div class="wrap-title"><h2 class="title">about us</h2></div>
+				<div class="page__content">
+					<p>We are independent investment banking advisory company. Our key focus are corporate, 
+					finance, mergers and acquisitions and strategic advisory. With 12 years of experience in the sector, we have built splendid relationships with multinational corporations, private and public companies in Europe, Asia and CIS. Our internal structure and geographic spread enables us to provide a high quality advisory service in a wide range of markets and sectors.</p>
+					<p>We operate from four offices in Dusseldorf, Hong Kong, Moscow and Kiev from which we serve a wide range of clients looking for advice and assistance on their most important strategic issues. We have in-depth knowledge of the sectors in which we operate and a comprehensive understanding of the dynamics and competitive forces of each market. We know the players and we know the trends. We understand how these factors impact our clients, strategic and institutional investors. </p>
+					<p>Our focus in M&A advisory are on mid-market M&A, on transactions from €10 up to €100 mln. Our track-record has more then 50 corporate domestic and multinational clients. </p>
+					<p>Our clients receive our utmost attention in each of the investment banking directions such as: mergers and acquisitions, raising equity and debt capital and strategic consulting. We strive for balanced solutions that are focused on achieving concrete results. Our approach is to use our professional experience to achieve the most effective solutions. </p>
+					<p>In the negotiations between companies and investors, we advocate as the professional advisor and are able to provide a balance between all parties involved. We help our clients become leaders in their markets. Our financial solutions are aimed towards growth and increasing efficiency of our client’s businesses.</p>
+					<p>Our experience as strategic and corporate finance advisor, well-knowing regional specificity and deep understanding the decision-making process, we can guarantee the best conditions and the minimum time for completion of the transactions.</p>
+				</div>
+			</div>
+			<div class="l-sidebar">
+				<ul class="sub-nav">
+					<li class="is-active"><a href="#">About us</a></li>
+					<li><a href="#">Our advantages</a></li>
+					<li><a href="#">Executive Team</a></li>
+					<li><a href="#">News and publications</a></li>
+					<li><a href="#">Careers</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- END out-->
-
+<!-- BEGIN footer -->
+<div class="footer">
+	<div class="footer-i wrap">
+		<div class="footer__left">
+			<ul class="second-nav">
+				<li><a href="#">Company </a></li>
+				<li><a href="#">Services </a></li>
+				<li><a href="#">Industries  </a></li>
+				<li><a href="#">Contacts </a></li>
+			</ul>
+		</div>
+		<div class="footer__right">
+			<div class="footer__copy">
+				<p>Copyright © 2002-2014 MDN Group</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- / .footer -->
 </body>
 </html>
