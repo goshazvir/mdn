@@ -12,6 +12,9 @@ body
 	+os
 	line-height: 1.2
 .out
+	width: 1000px
+	margin-left: auto
+	margin-right: auto
 	position: relative
 .wrap
 	width: 940px
@@ -32,7 +35,7 @@ body
 .header__logo
 	width: 170px
 	position: absolute
-	top: -16px
+	top: -12px
 	left: 2px
 	+s(logo)
 	+hide-text
@@ -93,7 +96,7 @@ body
 	margin-left: -343px
 	z-index: 999
 	+border-radius(5px)
-	+box-shadow(0 0 0 5px rgba(#fff, .42))
+	+box-shadow(0 0 0 8px rgba(#fff, .5))
 	overflow: hidden
 	ul
 		display: table-row
@@ -168,6 +171,8 @@ body
 	color: #555
 	p
 		margin-bottom: 7px
+		strong
+			+ob
 .wrap-title
 	height: 41px
 	position: relative
@@ -192,6 +197,13 @@ body
 	&:after
 		+s(t-shadow_r)
 		right: -16px
+.meta
+	a
+
+		background: #40619E
+		font-size: 14px
+		text-transform: uppercase
+		color: #4A4A4A
 .sub-nav
 	text-align: left
 	li
@@ -205,14 +217,17 @@ body
 			left: 18px
 			top: 13px
 		&.is-active
-			background: #F3F3F3 
+			background: #40619e
+			+box-shadow(inset 0px 1px 0 rgba(#fff, .5))
+			a
+				color: #fff
 			&:hover
 				a
 					text-decoration: none
 	a
 		font-size: 15px
 		text-decoration: none
-		color: #4A4A4A
+		color: #4a4a4a
 		&:hover
 			text-decoration: underline
 
