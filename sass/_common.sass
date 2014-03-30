@@ -198,27 +198,36 @@ body
 		+s(t-shadow_r)
 		right: -16px
 .meta
-	a
-
-		background: #40619E
+	width: 205px
+	height: 33px
+	line-height: 33px
+	margin-bottom: 5px
+	background: #F2F2F2 
+	.h3
+		background: #f2f2f2
 		font-size: 14px
 		text-transform: uppercase
-		color: #4A4A4A
+		color: #4a4a4a
+		+ob
 .sub-nav
+	width: 205px
+	margin-bottom: 50px
 	text-align: left
 	li
-		padding: 7px 30px
+		padding: 7px 40px
 		margin-bottom: 8px
 		position: relative
 		&:before
 			content: ""
 			+s(i-list)
 			position: absolute
-			left: 18px
+			left: 20px
 			top: 13px
 		&.is-active
 			background: #40619e
 			+box-shadow(inset 0px 1px 0 rgba(#fff, .5))
+			&:before
+				+s(i-list_mod)
 			a
 				color: #fff
 			&:hover
