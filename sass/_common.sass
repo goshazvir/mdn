@@ -2,11 +2,14 @@
 
 =os
 	font-family: 'Open Sans', sans-serif
+	font-weight: 400 
 =ol
-	font-family: 'Open Sans Light', sans-serif
+	font-family: 'Open Sans', sans-serif
+	font-weight: 300
 =ob
-	font-family: 'Open Sans SemiBold', sans-serif
-	font-weight: bold
+	font-family: 'Open Sans', sans-serif
+	font-weight: 600
+
 body
 	font-size: 15px 
 	+os
@@ -129,13 +132,13 @@ body
 		background: #40424B
 		color: #d3d0d0
 		text-decoration: none
-		text-align: center
+		text-align: center 
 		+ol
 		&:hover
-			background: #696A72
-			color: #fff
-		&.is-active
-			background: #696A72
+			background: #696A72 
+			color: #fff 
+		&.is-active 
+			background: #696A72 
 			color: #fff 
 .slider
 	min-width: 1000px
@@ -231,8 +234,8 @@ body
 				background: #40619e 
 				+box-shadow(inset 0px 1px 0 rgba(#fff, .5)) 
 				color: #fff 
-				&:before  
-					+s(i-list_mod)
+				&:before, &:after 
+					background: #FFF
 			&:hover
 				a
 					text-decoration: none
@@ -247,16 +250,21 @@ body
 		&:hover
 			background: #40619e
 			+box-shadow(inset 0px 1px 0 rgba(#fff, .5))
-			&:before
-				+s(i-list_mod)
-			color: #FFF 
-		&:before
+			color: #FFF
+			&:before, &:after
+				background: #fff 
+		&:before, &:after
 			content: ""
-			+s(i-list)
+			height: 6px
+			background: #9b9b9b
 			position: absolute
-			left: 20px
 			top: 13px
-
+		&:before
+			width: 8px
+			left: 20px
+		&:after
+			width: 2px
+			left: 30px
 .footer
 	min-width: 1000px
 	background: #40434b
