@@ -105,7 +105,7 @@ body
 	display: table
 	border-spacing: 0px
 	+border-radius(1px)
-	+box-shadow(0 0 0 8px rgba(#fff, .5))
+	+box-shadow(0 0 0 8px rgba(255,255,255,.25))
 	overflow: hidden
 	background: rgba(#fff, .5)
 	ul
@@ -131,15 +131,18 @@ body
 		+box-shadow(inset 1px 0px 0 #393939)
 		display: block
 		background: #40424B
+		@include background-image(linear-gradient(bottom, #393c44 0%, #4f5157 100%))
 		color: #d3d0d0
 		text-decoration: none
 		text-align: center 
 		+ol
 		&:hover
-			background: #696A72 
+			background: #696A72
+			@include background-image(linear-gradient(bottom, #4f5157 0%, #4f5157 100%))
 			color: #fff 
 		&.is-active 
-			background: #696A72 
+			background: #696A72
+			@include background-image(linear-gradient(bottom, #4f5157 0%, #4f5157 100%))
 			color: #fff 
 .slider
 	min-width: 1000px
@@ -208,13 +211,13 @@ body
 	&:before, &:after
 		content: ""
 		position: absolute
-		bottom: 1px
+		bottom: -6px
 	&:before
 		+s(t-shadow_l)
 		left: -16px
 	&:after
 		+s(t-shadow_r)
-		right: -16px
+		right: -15px
 .meta
 	height: 33px
 	line-height: 33px
@@ -339,21 +342,24 @@ body
 		position: absolute
 		top: 50%
 		margin-top: -16px
+		font-size: 20px
+		cursor: pointer
 	.cycle__prev
-		+s(i-arr_l)
+		// +s(i-arr_l)
 		left: 18px
 	.cycle__next
-		+s(i-arr_r)
+		// +s(i-arr_r)
 		right: 18px
 
 .view-all
 	display: inline-block
 	vertical-align: middle
+	font-size: 12px
 	color: #4a4a4a
 	text-decoration: none
-	&:after
-		content: ""
-		margin-left: 5px
-		display: inline-block
-		vertical-align: middle
-		+s(i-arr)
+	// &:after
+	// 	content: ""
+	// 	margin-left: 5px
+	// 	display: inline-block
+	// 	vertical-align: middle
+	// 	+s(i-arr)
