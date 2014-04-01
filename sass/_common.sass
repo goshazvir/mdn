@@ -128,21 +128,21 @@ body
 		height: 54px
 		line-height: 54px
 		border-left: 1px solid #525252
-		+box-shadow(inset 1px 0px 0 #393939)
+		+box-shadow(-1px 0px 0 #393939, inset  0 1px 0 #6a6e74, inset 0 -1px 0 #2a2f39)
 		display: block
 		background: #40424B
-		@include background-image(linear-gradient(bottom, #393c44 0%, #4f5157 100%))
+		+g(#4f5157, #3a3d44)
 		color: #d3d0d0
 		text-decoration: none
 		text-align: center 
 		+ol
 		&:hover
-			background: #696A72
-			@include background-image(linear-gradient(bottom, #4f5157 0%, #4f5157 100%))
+			background: #40424B
+			+g(#55585f, #41454e)
 			color: #fff 
 		&.is-active 
-			background: #696A72
-			@include background-image(linear-gradient(bottom, #4f5157 0%, #4f5157 100%))
+			background: #40424B
+			+g(#55585f, #41454e)
 			color: #fff 
 .slider
 	min-width: 1000px
@@ -344,6 +344,7 @@ body
 		margin-top: -16px
 		font-size: 20px
 		cursor: pointer
+		color: #9b9b9b 
 	.cycle__prev
 		// +s(i-arr_l)
 		left: 18px
